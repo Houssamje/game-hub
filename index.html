@@ -4,54 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hgamer</title>
+    <title>Gamehub</title>
     <!-- font css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <!--normalize css-->
     <link rel="stylesheet" href="normalize.css">
     <!-- main css-->
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
     <!--navbar-->
     <nav class="navbar">
         <div class="container flex">
-            <a href="#" class="navbar-brand">H <span>Gamer</span></a>
+            <a href="#" class="navbar-brand">Game<span>hub</span></a>
             <div class="navbar-collapse">
                 <button type="button" class="navbar-toggler-close">
                     <i class="fas fa-times"></i>
                 </button>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">home</a>
+                        <a href="#" class="nav-link" onclick="myFunction()">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">games</a>
-                        <span class="nav-item-dropdown">
-                            <i class="fas fa-chevron-down"></i>
+                        <a href="#community" class="nav-link"  onclick="myFunctioncom()">COMMUNITY</a>
+                        <!--<span class="nav-item-dropdown">
+                            <i class="fas fa-chevron-down" id="fas fa-chevron-down"></i>
                         </span>
-                        <ul class="nav-item-dropdown-content">
-                            <li><a href="#">Ps4</a></li>
-                            <li><a href="#">Xbox</a></li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Gamelope</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">news</a>
-                        <span class="nav-item-dropdown">
-                            <i class="fas fa-chevron-down"></i>
-                        </span>
-                        <ul class="nav-item-dropdown-content">
-                            <li><a href="#">Latest</a></li>
-                            <li><a href="#">Popular</a></li>
-                            <li><a href="#">Archive</a></li>
+                        <ul class="nav-item-dropdown-content" id="nav-item-dropdown-content">
+                            <li><a href="#">Top</a></li>
                             
-                        </ul>
+                            <li><a href="#">Cheldren Games</a></li>
+                            <li><a href="#">Crypto Games</a></li>
+                        </ul>-->
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">videos</a>
+                        <a href="#" class="nav-link">ABOUT</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SUPPORT</a>
+                         <!--<span class="nav-item-dropdown">
+                            <i class="fas fa-chevron-down" id="fas fa-chevron-down"></i>
+                        </span>
+                       <ul class="nav-item-dropdown-content" id="nav-item-dropdown-content">
+                            <li><a href="#">3D character</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>-->
+                    </li>
+                    
                 </ul>
             </div>
             <div class="nav-icons-group">
@@ -69,7 +70,574 @@
             </div>
 
 
+
         </div>
     </nav>
+   <!-- div Hom-->
+   <div class="Hom" id="Home">
+
+    <!-- FEATURED & RECOMMENDED-->
+    <div class = "title">
+        <div class = "container">
+            <h2>
+                <i class = "fas fa-rss"></i> FEATURED & RECOMMENDED
+            </h2>
+        </div>
+    </div>
+       <!-- promo section -->
+       <section id = "promo" class = "flex">
+        <div class = "container">
+            <span>join FANTASY ACTION RPG</span>
+            <h2>ELDEN RING</h2>
+            <p class = "text">THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</p>
+            <div class = "btn-groups flex">
+                <a  class="icond" href = "#">
+                    <i class = "fas fa-play"></i>   watch ELDEN RING
+                </a>
+                <a  class="icond" href = "#">
+                    <i class = "fas fa-gamepad"> </i> Download ELDEN RING
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end of promo section -->
+    <section id = "news">
+        <div class = "title">
+            <div class = "container">
+                <h2>
+                    <i class = "fas fa-rss"></i> News
+                </h2>
+            </div>
+        </div>
+
+            <div class = "container">
+                <!-- news latest -->
+                <div class = "news-latest">
+                    <h3>Latest News</h3>
+                    <article>
+                        <div class = "item-img">
+                            <img src = "imag.pr/Resident Evil 4.webp">
+                            <span>
+                                <i class = "fas fa-comment"></i> 10
+                            </span>
+                        </div>
+                        <div class = "item-text">
+                            <a href = "#" class = "h1">
+                                <span class = "category">latest</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </a>
+                            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facilis quia. Officia similique omnis optio!</p>
+                            <div class = "date">News | Latest | 11:00 AM</div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class = "item-img">
+                            <img src = "imag.pr/shadow.jpg">
+                            <span>
+                                <i class = "fas fa-comment"></i> 10
+                            </span>
+                        </div>
+                        <div class = "item-text">
+                            <a href = "#" class = "h1">
+                                <span class = "category">latest</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </a>
+                            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facilis quia. Officia similique omnis optio!</p>
+                            <div class = "date">News | Latest | 11:00 AM</div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class = "item-img">
+                            <img src = "imag.pr/Rise-of-the-Tomb-Raider.jpg">
+                            <span>
+                                <i class = "fas fa-comment"></i> 10
+                            </span>
+                        </div>
+                        <div class = "item-text">
+                            <a href = "#" class = "h1">
+                                <span class = "category">latest</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </a>
+                            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facilis quia. Officia similique omnis optio!</p>
+                            <div class = "date">News | Latest | 11:00 AM</div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class = "item-img">
+                            <img src = "imag.pr/days-gone-de.jpg">
+                            <span>
+                                <i class = "fas fa-comment"></i> 10
+                            </span>
+                        </div>
+                        <div class = "item-text">
+                            <a href = "#" class = "h1">
+                                <span class = "category">latest</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </a>
+                            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facilis quia. Officia similique omnis optio!</p>
+                            <div class = "date">News | Latest | 11:00 AM</div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class = "item-img">
+                            <img src = "imag.pr/Gta_v_logo.jpg">
+                            <span>
+                                <i class = "fas fa-comment"></i> 10
+                            </span>
+                        </div>
+                        <div class = "item-text">
+                            <a href = "#" class = "h1">
+                                <span class = "category">latest</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </a>
+                            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facilis quia. Officia similique omnis optio!</p>
+                            <div class = "date">News | Latest | 11:00 AM</div>
+                        </div>
+                    </article>
+                </div>
+                <!-- end of news latest -->
+
+                <!-- news popular -->
+                <div class = "news-popular">
+                    <h3>Popular News</h3>
+                    <div class = "popular-list">
+                        <article>
+                            <div class = "item-img">
+                                <img src = "imag.pr/days-gone-2021-4k-ly.jpg">
+                            </div>
+                            <div class = "item-text">
+                                <a href = "#" class = "h1"><span class = "category">popular</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class = "item-img">
+                                <img src = "imag.pr/news-7.jpg">
+                            </div>
+                            <div class = "item-text">
+                                <a href = "#" class = "h1"><span class = "category">popular</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class = "item-img">
+                                <img src = "imag.pr/news-8.jpg">
+                            </div>
+                            <div class = "item-text">
+                                <a href = "#" class = "h1"><span class = "category">popular</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class = "item-img">
+                                <img src = "imag.pr/news-9.jpg">
+                            </div>
+                            <div class = "item-text">
+                                <a href = "#" class = "h1"><span class = "category">popular</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class = "item-img">
+                                <img src = "imag.pr/news-3.jpg">
+                            </div>
+                            <div class = "item-text">
+                                <a href = "#" class = "h1"><span class = "category">popular</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- end of news popular -->
+            </div>
+    </section>
+    <!-- videos section -->
+    <section id = "videos">
+        <div class = "title">
+            <div class = "container">
+                <h2>
+                    <i class = "fas fa-play"></i> Videos & Trailers
+                </h2>
+            </div>
+        </div>
+        <div class = "container">
+            <article>
+                <div class = "item-video">
+                    <video controls poster = "video/video-1-poster.webp">
+                        <source src = "video/video-1.mp4" type = "video/mp4">
+                    </video>
+                </div>
+                <div class = "item-text">
+                    <a href = "#" class = "h1"><span class = "category">trailer</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                    <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit facere laborum laudantium, modi quos.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class = "item-video">
+                    <video controls poster = "video/video-2-poster.webp">
+                        <source src = "video/video-2.mp4" type = "video/mp4">
+                    </video>
+                </div>
+                <div class = "item-text">
+                    <a href = "#" class = "h1"><span class = "category">trailer</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                    <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit facere laborum laudantium, modi quos.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class = "item-video">
+                    <video controls poster = "video/video-3-poster.webp">
+                        <source src = "video/video-3.mp4" type = "video/mp4">
+                    </video>
+                </div>
+                <div class = "item-text">
+                    <a href = "#" class = "h1"><span class = "category">trailer</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                    <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit facere laborum laudantium, modi quos.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class = "item-video">
+                    <video controls poster = "video/video-4-poster.webp">
+                        <source src = "video/video-4.mp4" type = "video/mp4">
+                    </video>
+                </div>
+                <div class = "item-text">
+                    <a href = "#" class = "h1"><span class = "category">trailer</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                    <p class = "text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit facere laborum laudantium, modi quos.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- end of videos section -->
+    <!-- end of news section -->
+    <!--header-->
+    
+
+    <!--caret-->
+    <div class = "title">
+        <div class = "container">
+            <h2>
+                <i class = "fas fa-gamepad"></i> crypto game
+            </h2>
+        </div>
+    </div>
+    <div class="containercaret">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="imag.pr/AXIE.jpg">
+                    <h3>Halo Infinit  </h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href=" https://axieinfinity.com/">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="imag.pr/Light-Nite-poster.jpg">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="https://lightnite.io/ref=cagyjan">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="imag.pr/founder pack.jpg">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="https://www.9livesarena.com/">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="imag.pr/minirroyale.jpg">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="imag.pr/bomb crypto.jpg">
+                    <h3>Code</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="">
+                    <h3>Launch</h3>
+                </div>
+            </div>
+            
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="img/images (2).jfif">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="img/images (2).jfif">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="img/images (2).jfif">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="img/images (2).jfif">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!---->
+    <!--ca-->
+
+   </div>
+
+
+    <!--div comnunity login-->
+    <div class="community" id="community">
+        <div class="community-conection fn">
+            <h1> Please Loagin</h1>
+            <form action="">
+                <div class="Form-control">
+                    <input type="text" class="emailinp" >
+                    <label for="">Email</label>
+                    <!--<LAbel>
+                        <span style="transition-delay: 0ms;">E</span>
+                    <span style="transition-delay: 50ms;">m</span>
+                    <span style="transition-delay: 100ms;">a</span>
+                    <span style="transition-delay: 150ms;">i</span>
+                    <span style="transition-delay: 200ms;">l</span>
+                    </LAbel>-->
+                    
+                </div>
+    
+                <div class="Form-control">
+                    <input type="password" class="passemp" >
+                    <label for="">Password</label>
+                </div>
+                <button class="btn JOINy">Login</button>
+                <p class="text">Join GameHub and discover thousands of games to play. <a href="#" class="join">Join GamaeHub</a>
+    
+                </p>
+                
+            </form>
+        </div>
+
+        <!--inscrit-->
+        <div class="community-join hide fn verify">
+            <div class="community-conection">
+                <h1>CREATE YOUR ACCOUNT</h1>
+                <form action="">
+                    <div class="Form-control">
+                        <input type="text" id="inpemail" required>
+                        <label for="" >Email Address</label>
+                        
+                    </div>
+                    <div class="Form-control">
+                        <input type="text" required>
+                        <label for="">Confirm your Address</label>
+                        
+                    </div>
+        
+                    <div class="Form-control">
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <p class="text"> am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.   
+        
+                    </p>
+                    <button class="btn JOINy" onclick="appendText()" >Login</button>
+                    
+                    
+                </form>
+            </div>
+        </div>
+        
+
+        
+        
+    </div>
+    <!--verify accont-->
+    <div class="community-verify  verify">
+        <h1>Verify Your Account </h1>
+        <p>We emailed your thes six digit code to <p id="emailps" ></p>  <br/> Enter the code below to
+        confirm your email address.</p>
+        <div class="code-container">
+            <input type="number"  class=" code"
+            placeholder="0" min="0" max="9">
+            <input type="number"  class=" code"
+            placeholder="0" min="0" max="9">
+            <input type="number"  class=" code"
+            placeholder="0" min="0" max="9">
+            <input type="number"  class=" code"
+            placeholder="0" min="0" max="9">
+            <input type="number"  class=" code"
+            placeholder="0" min="0" max="9">
+            <input type="number"  class=" code"
+            placeholder="0" min="0" max="9">
+        </div>
+        <small class="info">
+            this is design oly .we didn't actually send
+            you an email as we don't have your email,
+        </small>
+        <button class="btn JOINy vrfbt">valid</button>
+
+    </div>
+    <div class="communty-hom">
+            
+    </div>
+    
+    
+    <!---->
+    <!-- butt haed-->
+    <footer id = "footer">
+        <div class = "container">
+            <div class = "footer-links-1">
+                <h2>Join GameHub:</h2>
+                <ul class = "flex">
+                    <li>
+                        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href = "#"><i class = "fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href = "#"><i class = "fab fa-twitch"></i></a>
+                    </li>
+                    <li>
+                        <a href = "#"><i class = "fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href = "#"><i class = "fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "footer-links-2">
+                <ul class = "flex">
+                    <li>
+                        <a href = "#">About GameHub</a>
+                    </li>
+                    <li>
+                        <a href = "#">Adertise</a>
+                    </li>
+                    <li>
+                        <a href = "#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href = "#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href = "#">Contact</a>
+                    </li>
+                    <li>
+                        <a href = "#">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class = "text">&copy; <a href = "#">GameHub</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+     
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="swiper.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
