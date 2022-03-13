@@ -34,53 +34,6 @@ navToggleropen.addEventListener('click', () =>{
 
 
 
-///comminity login label
-const lables = document.querySelectorAll('.Form-control label')
-lables.forEach(lable => {
-    lable.innerHTML = lable.innerText
-    .split('')
-    .map((letter, idx) =>`<span 
-    stayle="transition-delay:${idx *50}ms">${letter}</span>`)
-    .join('')
-})
-
-
-/// heding div login
-$('.join').click(function () {
-
-    $('.fn').animate({ height: "toggle" });
-    
-    });
-    
-    $('.JOINy').click(function () {
-    
-    $('.verify').animate({ height: "toggle" });
-    
-    });
-    //vfy
-    function appendText() {
-    
-    var txt1 =   $("#inpemail").val();  
-    
-         
-    
-    $("#emailps").append(txt1); 
-    
-    }
-    ///rfy
-    const codes = document.querySelectorAll('.code')
-    codes[0].focus()
-    codes.forEach((code,indx)=>{
-        code.addEventListener('krydown', (e)=>{
-            if(e.key>=0 && e.key <=9){
-                codes[indx].value =''
-                setTimeout(()=> codes[indx + 1].focus(),10)
-            } else if(e.key === 'Backspace'){
-                setTimeout(()=> codes[indx - 1].focus(),10)
-
-            }
-        }) 
-    })
     
     $('.vrfbt').click(function () {
 
