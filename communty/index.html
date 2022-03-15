@@ -18,9 +18,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--normalize css-->
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/normalize.css">
     <!-- main css-->
     <link rel="stylesheet" href="main.css">
+
+   
     
     <!--hi mehdi lkhal-->
    
@@ -33,7 +35,7 @@
     <!--navbar-->
     <nav class="navbar">
         <div class="container flex">
-            <a href="#" class="navbar-brand">Game<span>hub</span></a>
+            <a href="/index.html" class="navbar-brand">Game<span>hub</span></a>
             <div class="navbar-collapse">
                 <button type="button" class="navbar-toggler-close">
                     <i class="fas fa-times"></i>
@@ -47,10 +49,10 @@
                         
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">ABOUT</a>
+                        <a href="/About/index.html" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">SUPPORT</a>
+                        <a href="/support/index.html" class="nav-link">SUPPORT</a>
                        
                     </li>
 
@@ -112,13 +114,13 @@
 
                     </div>
                     <div class="Form-control">
-                        <input type="text" id="inpemail" >
+                        <input type="text" id="inpenum" >
                         <label for=""> nume </label>
 
                     </div>
                     <div class="Form-control">
                         <input type="text"  class="emailinpvr" >
-                        <label for="">Confirm your Address</label>
+                        <label for="">email Address</label>
 
                     </div>
 
@@ -126,9 +128,9 @@
                         <input type="password" >
                         <label for="">Password</label>
                     </div>
-                    <p class="textlog"> am 13 years of age or older and agree to the terms of the Steam Subscriber
+                    <input type="checkbox" name="" id=""><label for="keepmesign" ">am 13 years of age or older and agree to the terms of the Steam Subscriber
                         Agreement and the Valve Privacy Policy.
-
+</label> 
                     </p>
                     
                    
@@ -161,7 +163,7 @@
             this is design oly .we didn't actually send
             you an email as we don't have your email,
         </small>
-        <button class="btnt JOINvfy vrfbt " onclick="appendprofll() " id="validerr">valid</button>
+        <button class="btnt JOINvfy vrfbt " onclick=" appendText()  " id="validerr">valid</button>
 
     </div>
     <div class="communty-hom" id="comuntyhom">
@@ -174,7 +176,7 @@
                     <img class="mypic" src="/imag.pr/unco.webp" alt="">
                     <h3 class="h3prof"></h3>
                     <p class="gmlprf"></p>
-                    <p class="profile-info-text">
+                    <p class="profile-info-text  profimail ">
                         <img src="img/Icon metro-location.png" alt="">
                         
                     </p>
@@ -182,6 +184,21 @@
                 </div>
       
                 </div>
+                <div class="push">
+                    <div class="inputt-proff">
+                        <h2>  add your Publication</h2>
+                        <input type = "text" class = "form-control fw-6" placeholder="Full Name" name = "full_name">
+                        <textarea rows = "5" class = "form-control fw-6" placeholder="Message" name = "message"></textarea></div>
+                    <div class="butt-inpprof">
+                      
+                        <input type="file" name="" id=""   class="btnt  ">
+                        
+                        <input type="button" value="send" class="btnt ">
+                    </div>
+                </div>
+              
+           
+               
                            <!-- main content -->
 
 
@@ -192,7 +209,7 @@
             <section id = "popular" class = "py-3">
                 <div class = "container">
                     <div class = "section-heading">
-                        <h2>Popular</h2>
+                        <h2>Publications</h2>
                     </div>
                     <div class = "popular-division">
                         <div class = "popular-item-list">
@@ -209,7 +226,7 @@
                                         <span class = "published-date">March 10, 2001, 5:16 pm</span>
                                     </p>
                                     <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                    <a href = "#" class = "post-btn">Read More</a>
+                                    <a href = "#" class = "post-btn"><i class="fas fa-gamepad"></i>Dawnlowd </a>
                                 </div>
                             </article>
         
@@ -227,7 +244,7 @@
                                     </p>
                                     <p class = "text">a short horror video game made by sahl ibrahimi
                                         Made with Unreal Engine 5 and Blender.</p>
-                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd   </a>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd   </a>
                                 </div>
                             </article>
         
@@ -244,24 +261,24 @@
                                         <span class = "published-date">March 10, 2001, 5:16 pm</span>
                                     </p>
                                     <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd </a>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd </a>
                                 </div>
                             </article>
         
                             <article class = "item">
                                 <div class = "item-img">
-                                    <img src = "/imag.pr/fireblob.jpg.crdownload">
+                                    <img src = "/imag.pr/banat.jpg">
                                    
                                 </div>
                                 <div class = "item-info">
                                     <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
                                     <p class = "post-author flex"> 
                                         <img src = "/imag.pr/zenab.jpeg" class = "post-author-img">
-                                        <span class = "post-author-name">Jane Doe</span>
+                                        <span class = "post-author-name">zenab belhaid</span>
                                         <span class = "published-date">March 10, 2001, 5:16 pm</span>
                                     </p>
                                     <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd </a>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd </a>
                                 </div>
                             </article>
                             <article class = "item">
@@ -277,7 +294,7 @@
                                         <span class = "published-date">March 10, 2001, 5:16 pm</span>
                                     </p>
                                     <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd </a>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd </a>
                                 </div>
                             </article>
                             <article class = "item">

@@ -168,7 +168,9 @@ img{
 .text-uppercase{text-transform: uppercase;}
 .text-capitalize{text-transform: capitalize;}
 
-
+.contact-left input ::placeholder{
+    color: #ab2ae7;
+}
 .container{
     max-width: calc(1145px - 20px);
     padding: 0 2rem;
@@ -231,6 +233,10 @@ img{
         margin-bottom: 4.2rem;
     }
 }
+.inputt-proff{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 
 /* contact section */
 .section-title h2{
@@ -258,8 +264,8 @@ img{
 .contact-left .form-control{
     background-color: #f6f1f8;
     padding: 1rem 0;
-    color: var(--grey-color);
-    border-bottom: 2px solid var(--grey-color);
+    color: var(--bleu-color);
+    border-bottom: 2px solid var(--bleu-color);
     margin-bottom: 3rem;
     border-radius: 5px;
 }

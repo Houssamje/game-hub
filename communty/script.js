@@ -99,7 +99,7 @@ $('.join').click(function () {
     
         var nomprof =   $("#nmprfl").val();  
         
-             
+
         
         $(".h3prof").append(nomprof); 
         
@@ -158,23 +158,24 @@ $('.join').click(function () {
     function appendText() {
     
         var txt1 =   $("#inpemail").val();  
+        $(".h3prof").append(txt1);
         
-             
         
-        $("#emailps").append(txt1); 
-        
-        }
+
+        var txt2 =   $("#inpenum").val();  
+        $(".gmlprf").append(txt2); 
+
+
+
+        var txt3 =   $(".emailinpvr").val();  
+        $(".profimail ").append(txt3); 
+
+
+
+    }
     
         //
-        function appendprof() {
-        
-            var nomprof =   $(".emailinpvr").val();  
-            
-                 
-            
-            $("#emailps").append(nomprof); 
-            
-            }
+       
     
     
     

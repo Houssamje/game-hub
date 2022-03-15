@@ -287,9 +287,11 @@ img{
 
 /*community-verify*/
 /**//**//**/
-
-.community-conection{
-    
+.community-conection p{
+    font-family: var(--chango);
+}
+.community-conection label{
+    font-family: var(--archivo);
 }
 .communty-hom{
     display: none;
@@ -341,6 +343,35 @@ img{
     -webkit-appearance: none;
     margin: 0;
 }
+.butt-inpprof input{
+    background-color: #ab2ae7;
+}
+.push{
+ 
+    margin-top: 10rem;
+    margin-right: 50rem;
+    margin-left: 50rem;
+
+    padding: 100px;
+    text-align: center;
+   
+}
+
+.push .form-control{
+    width: 400px;
+    border: radius 5px; ;
+}
+
+.push input{
+    
+    background-color: #f6f1f8;
+    padding: 1rem 0;
+    color: var(--bleu-color);
+    border-bottom: 2px solid var(--bleu-color);
+    width: 400px;
+    border-radius: 5px;
+
+}
 #emailps{
     color: var(--pinq-color);
 }
@@ -351,7 +382,7 @@ img{
     line-height: 20px;
     max-width: 400px;
     color: #1a1919;
-    border-radius: 5px;
+    border-radius: 5px 0px ;
 }
 
 /*profil*/
@@ -509,11 +540,14 @@ img{
 
 
 
-
+.inputt-proff >h2 {
+    font-family: var(--archivo);
+    font-size: 3.4rem;
+}
 
 .py-3{
     padding: 3rem 0;
-    margin-top: 30rem;
+    margin-top: 10rem;
     margin-left: 2rem;
 
 }
@@ -619,10 +653,11 @@ img{
     height: 100%;
 }
 .item-info .post-title{
-    font-family: var(--castoro);
+    font-family: var(--chango);
     margin: 1.4rem 0;
     color: #000;
 }
+
 .item-info .post-author-name{
     font-weight: 300;
     font-style: italic;
@@ -637,6 +672,7 @@ img{
     opacity: 0.8;
 }
 .item-info .post-btn{
+    font-family: var(--audiowide);
     background-color: var(--pinq-color);
     color: #fff;
     display: inline-block;
@@ -690,6 +726,7 @@ img{
     border-bottom: 2px solid var(--light-gray);
 }
 .section-heading h2{
+    font-family: var(--archivo);
     font-size: 3.4rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -705,6 +742,8 @@ img{
     margin-top: 0;
 }
 /* popular section */
+
+
 .popular{
     margin-right: 30px;
 }
