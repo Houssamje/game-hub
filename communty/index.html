@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamehub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- owl carousel css -->
+    <link rel = "stylesheet" href = "OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel = "stylesheet" href = "OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+ 
     <!-- font css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -15,11 +21,15 @@
     <link rel="stylesheet" href="normalize.css">
     <!-- main css-->
     <link rel="stylesheet" href="main.css">
+    
     <!--hi mehdi lkhal-->
+   
+    
     <!-- hey houusam how are you -->
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--navbar-->
     <nav class="navbar">
         <div class="container flex">
@@ -68,54 +78,61 @@
 
     <!--div comnunity login-->
     
-        <div class="community-conection fn">
+        <div class="community-conection fn " id="communtyco">
             <h1> Please Loagin</h1>
-            <form action="">
+            <form action="" >
                 <div class="Form-control">
-                    <input type="text" class="emailinp">
+                    <input type="text" class="emailinp" id="email">
                     <label for="">Email</label>
                   
 
                 </div>
 
                 <div class="Form-control">
-                    <input type="password" class="passemp">
+                    <input type="password" class="passemp" id="number">
                     <label for="">Password</label>
                 </div>
-                <button class="btn JOINy">Login</button>
-                <p class="text">Join GameHub and discover thousands of games to play. <a href="#" class="join">Join
+                <input type="button" value="Login" class="btnt JOINy">
+                
+                <p class="textlog">Join GameHub and discover thousands of games to play. <a href="#" class="join">Join
                         GamaeHub</a>
 
                 </p>
 
             </form>
         </div>
-
         <!--inscrit-->
-        <div class="community-join hide fn verify">
+        <div class="community-join inscrit" id="communtyjoin">
             <div class="community-conection">
                 <h1>CREATE YOUR ACCOUNT</h1>
                 <form action="">
                     <div class="Form-control">
-                        <input type="text" id="inpemail" required>
-                        <label for="">Email Address</label>
+                        <input type="text" id="inpemail" >
+                        <label for=""> Nickname</label>
 
                     </div>
                     <div class="Form-control">
-                        <input type="text" required>
+                        <input type="text" id="inpemail" >
+                        <label for=""> nume </label>
+
+                    </div>
+                    <div class="Form-control">
+                        <input type="text"  class="emailinpvr" >
                         <label for="">Confirm your Address</label>
 
                     </div>
 
                     <div class="Form-control">
-                        <input type="password" required>
+                        <input type="password" >
                         <label for="">Password</label>
                     </div>
-                    <p class="text"> am 13 years of age or older and agree to the terms of the Steam Subscriber
+                    <p class="textlog"> am 13 years of age or older and agree to the terms of the Steam Subscriber
                         Agreement and the Valve Privacy Policy.
 
                     </p>
-                    <button class="btn JOINy" onclick="appendText()">Login</button>
+                    
+                   
+                    <input type="button" value=" join"  class="btnt joinbnt vrfbt"   onclick="appendprof()">
 
 
                 </form>
@@ -127,10 +144,10 @@
 
     </>
     <!--verify accont-->
-    <div class="community-verify  verify">
+    <div class="community-verify  verify" id="communtyvrif">
         <h1>Verify Your Account </h1>
         <p>We emailed your thes six digit code to
-        <p id="emailps"></p> <br /> Enter the code below to
+        <h4 id="emailps"></h4> <br /> Enter the code below to
         confirm your email address.</p>
         <div class="code-container">
             <input type="number" class=" code" placeholder="0" min="0" max="9">
@@ -144,198 +161,252 @@
             this is design oly .we didn't actually send
             you an email as we don't have your email,
         </small>
-        <button class="btn JOINy vrfbt">valid</button>
+        <button class="btnt JOINvfy vrfbt " onclick="appendprofll() " id="validerr">valid</button>
 
     </div>
-    <div class="communty-hom">
+    <div class="communty-hom" id="comuntyhom">
+        <div class="contenu-comunty">
+      
 
-    </div>
-    <div class="contenu-comunty">
-        <!-- popular section -->
-        <section id = "popular" class = "py-3">
-            <div class = "container">
-                <div class = "section-heading">
-                    <h2>Popular</h2>
+            <!--profile-->
+            <div class="maine">
+                <div class="profile">
+                    <img class="mypic" src="/imag.pr/unco.webp" alt="">
+                    <h3 class="h3prof"></h3>
+                    <p class="gmlprf"></p>
+                    <p class="profile-info-text">
+                        <img src="img/Icon metro-location.png" alt="">
+                        
+                    </p>
+                    <p class="profile-info-text"></p>
                 </div>
-                <div class = "popular-division">
-                    <div class = "popular-item-list">
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-1.jpg">
-                                <span class = "category-name">latest</span>
-                            </div>
-                            <div class = "item-info">
-                                <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <p class = "post-author flex"> 
-                                    <img src = "images/author-img-1.jpg" class = "post-author-img">
-                                    <span class = "post-author-name">Jane Doe</span>
-                                    <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                                </p>
-                                <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                <a href = "#" class = "post-btn">Read More</a>
-                            </div>
-                        </article>
-    
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-2.jpg">
-                                <span class = "category-name">latest</span>
-                            </div>
-                            <div class = "item-info">
-                                <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <p class = "post-author flex"> 
-                                    <img src = "images/author-img-2.jpg" class = "post-author-img">
-                                    <span class = "post-author-name">Jane Doe</span>
-                                    <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                                </p>
-                                <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                <a href = "#" class = "post-btn">Read More</a>
-                            </div>
-                        </article>
-    
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-3.jpg">
-                                <span class = "category-name">latest</span>
-                            </div>
-                            <div class = "item-info">
-                                <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <p class = "post-author flex"> 
-                                    <img src = "images/author-img-3.jpg" class = "post-author-img">
-                                    <span class = "post-author-name">Jane Doe</span>
-                                    <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                                </p>
-                                <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                <a href = "#" class = "post-btn">Read More</a>
-                            </div>
-                        </article>
-    
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-4.jpg">
-                                <span class = "category-name">latest</span>
-                            </div>
-                            <div class = "item-info">
-                                <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <p class = "post-author flex"> 
-                                    <img src = "images/author-img-4.jpg" class = "post-author-img">
-                                    <span class = "post-author-name">Jane Doe</span>
-                                    <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                                </p>
-                                <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
-                                <a href = "#" class = "post-btn">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class = "popular-item-list">
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-6.jpg">
-                            </div>
-                            <div class = "item-info">
-                                <a href = "#" class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a href = "#">
-                                <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                            </div>
-                        </article>
-
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-7.jpg">
-                            </div>
-                            <div class = "item-info">
-                                <a href = "#" class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a href = "#">
-                                <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                            </div>
-                        </article>
-
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-8.jpg">
-                            </div>
-                            <div class = "item-info">
-                                <a href = "#" class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a href = "#">
-                                <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                            </div>
-                        </article>
-
-                        <article class = "item">
-                            <div class = "item-img">
-                                <img src = "images/popular-img-9.jpg">
-                            </div>
-                            <div class = "item-info">
-                                <a href = "#" class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a href = "#">
-                                <span class = "published-date">March 10, 2001, 5:16 pm</span>
-                            </div>
-                        </article>
-                    </div>
+      
                 </div>
-            </div>
-        </section>
-        <!-- end of popular section -->
-
-    </div>
+                           <!-- main content -->
 
 
-    <!---->
-    <!-- butt haed-->
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-links-1">
-                <h2>Join GameHub:</h2>
-                <ul class="flex">
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitch"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="footer-links-2">
-                <ul class="flex">
-                    <li>
-                        <a href="#">About GameHub</a>
-                    </li>
-                    <li>
-                        <a href="#">Adertise</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms of Use</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Reviews</a>
-                    </li>
-                </ul>
-            </div>
 
-            <p class="text">&copy; <a href="#">GameHub</a>. All Rights Reserved.</p>
+    
+            <!-- popular section-->
+            <section id = "popular" class = "py-3">
+                <div class = "container">
+                    <div class = "section-heading">
+                        <h2>Popular</h2>
+                    </div>
+                    <div class = "popular-division">
+                        <div class = "popular-item-list">
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/Space Misfits.jpg">
+                                    
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/Houssam.jpg" class = "post-author-img">
+                                        <span class = "post-author-name">Jane Doe</span>
+                                        <span class = "published-date">March 10, 2001, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
+                                    <a href = "#" class = "post-btn">Read More</a>
+                                </div>
+                            </article>
+        
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/AUGUST NIGHT.jpeg">
+                                    
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title"> AUGUST NIGHT </h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/WhatsApp Image 2022-03-13 at 17.43.41.jpeg" class = "post-author-img">
+                                        <span class = "post-author-name">sahel ibrahimi</span>
+                                        <span class = "published-date">March 10, 2001, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">a short horror video game made by sahl ibrahimi
+                                        Made with Unreal Engine 5 and Blender.</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd   </a>
+                                </div>
+                            </article>
+        
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/valorant (1).jpg">
+                                 
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/WhatsApp Image 2022-03-13 at 17.43.55.jpeg" class = "post-author-img">
+                                        <span class = "post-author-name">Amin Hatim</span>
+                                        <span class = "published-date">March 10, 2001, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd </a>
+                                </div>
+                            </article>
+        
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/fireblob.jpg.crdownload">
+                                   
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/zenab.jpeg" class = "post-author-img">
+                                        <span class = "post-author-name">Jane Doe</span>
+                                        <span class = "published-date">March 10, 2001, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd </a>
+                                </div>
+                            </article>
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/god of.jpg">
+                                
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">god of war</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/mehdi.jpeg" class = "post-author-img">
+                                        <span class = "post-author-name">elmahdi elhjuoji</span>
+                                        <span class = "published-date">March 10, 2001, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-play"></i>Dawnlowd </a>
+                                </div>
+                            </article>
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/fifa-22-logo.jpg">
+                                    
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">fifa22</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/ahmed.jpeg" class = "post-author-img">
+                                        <span class = "post-author-name">ahmed abd elghafar bounasser</span>
+                                        <span class = "published-date">March 10, 2001, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi pariatur ex et ipsam dolore? Libero nostrum eaque obcaecati animi ad iure autem aliquid maxime...</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd </a>
+                                </div>
+                            </article>
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/Pubg.jpg">
+                                    
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">PUBG</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/omaima.jpeg" class = "post-author-img">
+                                        <span class = "post-author-name">omaima tazi
+    
+                                        </span>
+                                        <span class = "published-date">March 10, 2022, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">PUBG MOBILE is a Battle Royale mobile game created independently by Lightspeed & Quantum Studios of Tencent Games, officially licensed by PLAYERUNKNOWN'S ...</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd </a>
+                                </div>
+                                
+                            </article>
+                            <article class = "item">
+                                <div class = "item-img">
+                                    <img src = "/imag.pr/garena-free-fire-redeem-code-21-June.webp">
+                                   
+                                </div>
+                                <div class = "item-info">
+                                    <h3 class = "post-title">Free fire</h3>
+                                    <p class = "post-author flex"> 
+                                        <img src = "/imag.pr/0souad.jpg" class = "post-author-img">
+                                        <span class = "post-author-name">Souad el maazouzi
+    
+                                        </span>
+                                        <span class = "published-date">March 10, 2021, 5:16 pm</span>
+                                    </p>
+                                    <p class = "text">Free Fire is a multiplayer battle royale mobile game, developed and published by Garena for Android and iOS. Battle in Style and be the last survivor!</p>
+                                    <a href = "#" class = "post-btn"> <i class="fas fa-gamepad"></i>Dawnlowd </a>
+                                </div>
+                                
+                            </article>
+                        </div>
+    
+                       
+                            
+                        </div>
+                    </div>
+            </section>
+            <!--end of popular section -->
+     
         </div>
-    </footer>
-    <!-- end of footer -->
+    
+    
+        <!---->
+        <!-- butt haed-->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-links-1">
+                    <h2>Join GameHub:</h2>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitch"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-links-2">
+                    <ul class="flex">
+                        <li>
+                            <a href="#">About GameHub</a>
+                        </li>
+                        <li>
+                            <a href="#">Adertise</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <p class="text">&copy; <a href="#">GameHub</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+   
 
 </html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="swiper.js"></script>
 
+<script src="swiper.js"></script>
 <script src="script.js"></script>
+
 </body>
 
 </html>

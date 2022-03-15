@@ -46,14 +46,31 @@ lables.forEach(lable => {
 
 /// heding div login
 $('.join').click(function () {
+    document.getElementById("communtyco").style.display = "none";
+    document.getElementById("communtyjoin").style.display = "block";
 
-    $('.fn').animate({ height: "toggle" });
+
+
+   
     
     });
     
     $('.JOINy').click(function () {
     
-    $('.verify').animate({ height: "toggle" });
+        document.getElementById("communtyco").style.display = "none";
+        document.getElementById("communtyjoin").style.display = "block";
+    
+    });
+    $('.joinbnt').click(function () {
+    
+        document.getElementById("communtyjoin").style.display = "none";
+        document.getElementById("communtyvrif").style.display = "block";
+    
+    });
+    $('.joinbnt').click(function () {
+    
+        document.getElementById("comuntyhom").style.display = "none";
+        document.getElementById("comuntyhom").style.display = "block";
     
     });
     //vfy
@@ -66,6 +83,28 @@ $('.join').click(function () {
     $("#emailps").append(txt1); 
     
     }
+    //vfy
+    function appendText() {
+    
+    var txt1 =   $("#inpemail").val();  
+    
+         
+    
+    $("#emailps").append(txt1); 
+    
+    }
+
+    //
+    function appendprof() {
+    
+        var nomprof =   $("#nmprfl").val();  
+        
+             
+        
+        $(".h3prof").append(nomprof); 
+        
+        }
+               
     ///rfy
     const codes = document.querySelectorAll('.code')
     codes[0].focus()
@@ -80,3 +119,62 @@ $('.join').click(function () {
             }
         }) 
     })
+    //email valadtion  for better user experince 
+
+    $(document).ready(function () {
+        $(".emailinp").keydown(function () {
+            var input = $(".emailinp").val();
+    
+    var regex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/
+    
+    
+    
+    if(!regex.test(input) )
+    
+    {
+       
+    
+      $(".emailinp").css("color", "rgb(241, 75, 75)");
+    
+    }else{
+        $(".emailinp").css("color", "#fff");
+    }
+        })
+
+       })
+
+       $(document).ready(function(){
+
+        $("#number").blur( function(){
+            
+            if($("#number").val() == ""){
+                alert("plan code")
+    
+            }
+    
+            
+        }) 
+    })
+    function appendText() {
+    
+        var txt1 =   $("#inpemail").val();  
+        
+             
+        
+        $("#emailps").append(txt1); 
+        
+        }
+    
+        //
+        function appendprof() {
+        
+            var nomprof =   $(".emailinpvr").val();  
+            
+                 
+            
+            $("#emailps").append(nomprof); 
+            
+            }
+    
+    
+    
