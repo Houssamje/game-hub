@@ -294,6 +294,7 @@ img{
     font-family: var(--archivo);
 }
 .communty-hom{
+    
     display: none;
 }
 
@@ -358,6 +359,7 @@ img{
 }
 
 .push .form-control{
+  
     width: 400px;
     border: radius 5px; ;
 }
@@ -541,14 +543,18 @@ img{
 
 
 .inputt-proff >h2 {
+    
     font-family: var(--archivo);
     font-size: 3.4rem;
 }
-
+.commmmmm{
+    background-image: linear-gradient( var(--dark-color), var(--bleu-color), var(--dark-color));
+}
 .py-3{
     padding: 3rem 0;
     margin-top: 10rem;
     margin-left: 2rem;
+    
 
 }
 /* header */
@@ -616,6 +622,7 @@ img{
     font-size: 2rem;
     color: #fff;
 }
+/**/
 
 /* featured section */
 .item{

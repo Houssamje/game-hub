@@ -65,11 +65,12 @@ $('.join').click(function () {
     
         document.getElementById("communtyjoin").style.display = "none";
         document.getElementById("communtyvrif").style.display = "block";
+        
     
     });
-    $('.joinbnt').click(function () {
+    $('#validerr').click(function () {
     
-        document.getElementById("comuntyhom").style.display = "none";
+        document.getElementById("communtyvrif").style.display = "none";
         document.getElementById("comuntyhom").style.display = "block";
     
     });
@@ -167,7 +168,7 @@ $('.join').click(function () {
 
 
 
-        var txt3 =   $(".emailinpvr").val();  
+        var txt3 =   $(".emailinp").val();  
         $(".profimail ").append(txt3); 
 
 
@@ -175,7 +176,15 @@ $('.join').click(function () {
     }
     
         //
-       
+        function appendprof() {
+        
+            var nomprof =   $(".emailinpvr").val();  
+            
+                 
+            
+            $("#emailps").append(nomprof); 
+            
+            }
     
     
     
