@@ -45,6 +45,13 @@ lables.forEach(lable => {
 
 
 /// heding div login
+$('.JOI').click(function () {
+    
+    document.getElementById("communtyco").style.display = "none";
+    document.getElementById("comuntyhom").style.display = "block";
+
+});
+
 $('.join').click(function () {
     document.getElementById("communtyco").style.display = "none";
     document.getElementById("communtyjoin").style.display = "block";
