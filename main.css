@@ -355,7 +355,9 @@ article{
 #videos .category{
     background-color: var(--pinq-color);
 }
-
+.container >h3{
+    font-family: var(--chango);
+}
 /*header section */
 
 
